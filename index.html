@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J — Profile</title>
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --text: #1a1d21;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      width: 100%;
+      max-width: 440px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 44px 32px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), #7c3aed);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    h1 {
+      font-size: 28px;
+      letter-spacing: 0.02em;
+      margin-bottom: 6px;
+    }
+    .role {
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .bio {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .link {
+      display: block;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.15s ease;
+    }
+    .link:not(.soon):hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .link.soon {
+      cursor: default;
+      opacity: 0.7;
+    }
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 12px;
+      opacity: 0.8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #f7f8fa;
+        --card: #ffffff;
+        --text: #1a1d21;
+        --muted: #6b7280;
+        --border: #e5e7eb;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="avatar">J</div>
+    <h1>J</h1>
+    <p class="role">大学4年生 / University Senior</p>
+    <p class="bio">英語学習中 📚<br />Currently studying English.</p>
+    <div class="links">
+      <span class="link soon">🔗 Links — Coming soon</span>
+    </div>
+    <p class="footer">© 2026 J</p>
+  </main>
+</body>
+</html>
