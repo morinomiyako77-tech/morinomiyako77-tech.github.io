@@ -1,0 +1,1 @@
+# morinomiyako77-tech.github.io
